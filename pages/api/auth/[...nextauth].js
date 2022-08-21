@@ -1,5 +1,5 @@
 import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/google"
+import GoogleProvider from "next-auth/providers/google"
 export default NextAuth({
   // Configure one or more authentication providers
   providers: [
@@ -11,5 +11,16 @@ export default NextAuth({
   ],
   pages: {
     signIn: "/auth/signin",
+  },
+  callbacks: {
+    async session ({session, token, user }) {
+      session.user.username = session.user.username
+      .split(" ")
+      .join("")
+      .toLocateLowerCaste();
+
+      session.user.uid = token.sub;
+      return session;
+    }
   }
 })
