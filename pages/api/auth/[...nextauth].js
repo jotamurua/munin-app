@@ -4,8 +4,8 @@ export default NextAuth({
   // Configure one or more authentication providers
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
     // ...add more providers here
   ],
@@ -20,7 +20,13 @@ export default NextAuth({
       .toLocateLowerCaste();
 
       session.user.uid = token.sub;
-      return session;
+      return session
     }
   }
+  // theme: {
+  //   logo: "",
+  //   brandColor: "#ffffff",
+  //   colorScheme: "auto"
+  // }
+
 })

@@ -3,8 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["links.papareact.com",
-  "firebasestorage.googleapis.com"]
+    domains: ["firebasestorage.googleapis.com", "links.papareact.com"]
   },
 }
 
