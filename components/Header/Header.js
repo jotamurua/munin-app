@@ -23,14 +23,14 @@ function Header() {
                 {/* left */}
                 <div onClick={() => router.push('/')} className='relative w-24 hidden lg:inline-grid'>
                     <Image
-                        src='https://firebasestorage.googleapis.com/v0/b/munin-7a28b.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=d7446851-b18f-4ff4-8ab9-74d56fce8acf'
+                        src='https://firebasestorage.googleapis.com/v0/b/portfolio-eda94.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=ca0b8ace-0414-4d98-b130-33c91c530634'
                         layout='fill'
                         objectFit="contain" 
                         alt=''/>
                 </div>
                 <div onClick={() => router.push('/')} className='relative w-10 lg:hidden flex-shrink-0 cursor-pointer'>
                     <Image
-                        src='https://firebasestorage.googleapis.com/v0/b/munin-7a28b.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=d7446851-b18f-4ff4-8ab9-74d56fce8acf'
+                        src='https://firebasestorage.googleapis.com/v0/b/portfolio-eda94.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=ca0b8ace-0414-4d98-b130-33c91c530634'
                         layout='fill'
                         objectFit="contain" 
                         alt=''/>
@@ -39,9 +39,8 @@ function Header() {
                 <div className="max-w-xs">
                     <div className="relative mt-1 p-3 rounded-md ">
                         <div className="absolute inset-y-0 pl-3 flex items-center pointer-events-none">
-                            <SearchIcon className="h-5 w-5 text-gray-500" />
+                            <h1>MUNIN</h1>
                         </div>
-                        <input className="bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 focus:ring-black focus:border-black rounded-md" type="text" placeholder="Search" />
                     </div>
                 </div>
                 {/* right  */}
@@ -59,8 +58,9 @@ function Header() {
                     <UserGroupIcon className='navBtn' />
                     <HeartIcon className='navBtn' />
 
-                    <Image 
+                    <img 
                     onClick={signOut}
+    
                     src={session.user.image} alt="profile pic" className="h-10 rounded-full cursor-pointer" />
                     </>)
                     :(
