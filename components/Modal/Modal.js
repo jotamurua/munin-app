@@ -21,10 +21,6 @@ function Modal() {
         if(loading) return
         setLoading(true)
 
-        //1- Create a post and add to firestore
-        //2- get the post ID for the newly created post
-        // 3- upload the image to firebase storage with the post ID
-        // 4- get a download URL from fb storage and update the original post with image.
 
         const docRef = await addDoc(collection(db, 'posts'),{
             username: session.user.username,
