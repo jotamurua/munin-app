@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bienvenida/o a MUNIN
 
-## Getting Started
+Soy Joel Murúa, estudiante de programación Fullstack en Argentina Programa con orientación de Front End en Angular y también estudié React.js en Coderhouse.
 
-First, run the development server:
+En esta web utilicé, entre otras, las siguientes funciones:
+- Inicio de sesión con Next AUTH vinculada a Google.
+- Conexión a una base de datos en Firebase que almacena todos los usuarios, publicaciones, likes, y comentarios.
+- Automaticamente al subirse una publicación esta se almacena en Firebase e impacta en el Frontend de la web. 
+- Cuenta con un diseño responsive en cualquier dispositivo.
+- En resumen, se implementaron los siguientes Hooks, tecnologías, lenguajes: Next.js, TailwindCSS, Firebase, NextAuth, Google, Recoil, entre otras.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Acá te dejo el link con el deploy de la web:
+[MUNIN](https://munin-app.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Si queres compilar por vos misma/o este proyecto podes hacerlo siguiendo estos pasos:
+ -clonar el repositorio desde github:
+ podes hacerlo manualmente o desde simbolo de sistema una vez dentro del directorio deseado con el siguiente codigo
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ `git clone https://github.com/jotamurua/munin-app.git`
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+-ejecutar los siguientes comandos desde el directorio de simbolo de sistema o la terminal del editor de codigo que estes usando:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`npm i`
 
-## Learn More
+`npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+Muchas gracias por leerme, aquí debajo te dejo mis contactos.
+Un saludo!
+Joel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*joel.l.murua@gmail.com*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+[Linkedin](https://www.linkedin.com/in/joelmurua/)
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[mi portfolio](https://portfoliomurua.netlify.app/)
