@@ -7,7 +7,7 @@ function signin({ providers }) {
       <Header />
       <div className='flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center'>
         <h1 className="font-bold">MUNIN</h1>
-        <p className='font-xs italic'>Signin in you will be abailable to post, like and comment. Also your Google username could be visible in MUNIN USERS section.</p>
+        <p className='font-xs italic'>Signin in you will be abailable to post, like and comment.</p>
         <div className='mt-40'>
           {Object.values(providers).map((provider) => (
             <div key={provider.name}>
