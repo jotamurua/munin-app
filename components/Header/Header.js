@@ -18,10 +18,10 @@ function Header() {
     const [open, setOpen ] = useRecoilState(modalState);
     const router = useRouter();
     return (
-        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
+        <div className="shadow-sm h-100 border-b bg-white sticky top-0 z-50 ">
             <div className='flex justify-between max-w-6xl mx-5 lg:mx-auto'>
                 {/* left */}
-                <div onClick={() => router.push('/')} className='relative w-24 hidden lg:inline-grid'>
+                <div onClick={() => router.push('/')} className='relative w-24 hidden lg:inline-grid '>
                     <Image
                         src='https://firebasestorage.googleapis.com/v0/b/portfolio-eda94.appspot.com/o/Sin%20t%C3%ADtulo-1.png?alt=media&token=ca0b8ace-0414-4d98-b130-33c91c530634'
                         layout='fill'
@@ -46,17 +46,17 @@ function Header() {
                 {/* right  */}
                 <div className="flex items-center justify-end space-x-4">
                     <HomeIcon onClick={() => router.push('/')} className="navBtn" />
-                    <MenuIcon className="h-6 md:hidden cursor-pointer" />
+                    {/* <MenuIcon className="h-6 md:hidden cursor-pointer" /> */}
 
                     {session? (
                     <>
                     <div className="relative navBtn">
-                    <PaperAirplaneIcon className="navBtn rotate-45" />
-                    <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">3</div>
+                    {/* <PaperAirplaneIcon className="navBtn rotate-45" /> */}
+                    {/* <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-red-500 rounded-full flex items-center justify-center animate-pulse text-white">3</div> */}
                     </div>
-                    <PlusCircleIcon  onClick= {() => setOpen(true)} className='navBtn' />
-                    <UserGroupIcon className='navBtn' />
-                    <HeartIcon className='navBtn' />
+                    <PlusCircleIcon  onClick= {() => setOpen(true)} className='h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out' />
+                    {/* <UserGroupIcon className='navBtn' /> */}
+                    {/* <HeartIcon className='navBtn' /> */}
 
                     <img 
                     onClick={signOut}

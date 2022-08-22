@@ -96,9 +96,9 @@ function Modal() {
                             <div>
 
                                 {selectedFile ? (
-                                    <Image
+                                    <img
                                         src={selectedFile}
-                                        layout='fill'
+                                       
                                         className="w-full object-contain cursor-pointer"
                                         onClick={() => setSelectedFile(null)}
                                         alt="" 
